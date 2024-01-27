@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexfolie</title>
+    <!-- Style CSS Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media CSS Link  -->
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--------------- Banner Section Satrt------------------------->
+    <style>
+        /* Menu Section Start */
+        .navbar {
+            padding: 20px 0px;
+        }
+
+        .nav_item {
+            list-style: none;
+            margin: auto 10px;
+        }
+
+        .nav_link {
+            color: var(--black-color);
+            font-family: var(--accent-font);
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+
+        /*  Menu Section End  */
+    </style>
+
+    <section>
+        <div class="banner_section">
+            <div class="container">
+
+                <!-- Menu -->
+                <nav class="navbar">
+                    <ul class="navbar_nav flex">
+                        <li class="nav_item"><a class="nav_link" href="#">Toepassingen</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Marketingen</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Rollen reflective</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Vellen</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Tapes</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Accessoires</a></li>
+
+                    </ul>
+                </nav>
+                <!-- Menu -->
+
+                <!-- Winter Deals tot 50% korting Style Start -->
+                <style>
+                    .winter_deals {
+                        position: relative;
+                        z-index: 5;
+                    }
+
+                    .winter_img {
+                        max-width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    .position {
+                        position: absolute;
+                        width: 100%;
+                        top: 50%;
+                        left: 0;
+                        transform: translate(0, -50%);
+                        z-index: 10;
+                    }
+
+                    .winter_deals_content {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: 100px;
+                        padding-right: 50px;
+
+                    }
+
+                    .winter_deals_text {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .winter_deals_title {
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        letter-spacing: -0.6px;
+                        margin-right: 30px;
+                    }
+
+                    .winter_deals_date {
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.6px;
+                    }
+
+                    .winter_btn {
+                        color: var(--white-color);
+                        font-family: var(--accent-font);
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 28px;
+                        /* 164.706% */
+                        padding: 10px 30px;
+                        border-radius: 5px;
+                        border: 2px solid var(--pramiry-color);
+                        text-decoration: none;
+                        display: inline-block;
+                        background-color: var(--pramiry-color);
+                        transition: all 0.3s;
+                    }
+
+                    .winter_btn:hover {
+                        background-color: transparent;
+                        color: var(--pramiry-color) !important;
+                    }
+                </style>
+                <!-- Winter Deals tot 50% korting Style End -->
+
+
+                <!-- Winter Deals tot 50% korting Section Start -->
+                <div class="winter_deals">
+
+                    <img class="winter_img" src="images/winter_deals.png" alt="winter_deals">
+
+                    <div class="position">
+
+                        <div class="winter_deals_content">
+                            <div class="winter_deals_text">
+                                <h2 class="winter_deals_title">Winter Deals tot 50% korting</h2>
+                                <h3 class="winter_deals_date">Geldig tot 31 jan ‘24</h3>
+                            </div>
+                            <!-- Button -->
+                            <a class="winter_btn" href="#">BEKIJK DE DEALS</a>
+
+                        </div>
+                    </div><!-- position -->
+
+                </div><!-- winter_deals -->
+
+                <!-- Winter Deals tot 50% korting Section End -->
+
+            </div><!-- Container -->
+        </div><!-- Banner section -->
+    </section>
+
+    <!--------------- Banner Section End------------------------->
+
+    <!--------------- List Section Start------------------------->
+    <style>
+        .list_siction {
+            background-color: #b43205;
+            height: 185px;
+            overflow: hidden;
+            position: relative;
+            margin-top: -70px;
+        }
+
+        .list_siction_bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .list {
+            position: absolute;
+            bottom: 50px;
+            z-index: 10;
+            width: 1300px;
+        }
+
+        .list_icon {
+            height: 32px;
+            width: 32px;
+            margin-right: 10px;
+        }
+    </style>
+    <section>
+        <div class="list_siction">
+            <img class="list_siction_bg" src="/images/Mask-group.png" alt="">
+
+            <div class="container">
+                <div class="list flex space_between ">
+                    <div class="list_icon_box flex align_center">
+                        <img class="list_icon" src="images/iconlist.png" alt="iconlist">
+                        <p class="small_title">Op voorraad, volgende werkdag in huis</p>
+                    </div>
+
+                    <div class="list_icon_box flex align_center">
+                        <img class="list_icon" src="images/iconlist.png" alt="iconlist">
+                        <p class="small_title">Maatwerk ook mogelijk</p>
+                    </div>
+
+                    <div class="list_icon_box flex align_center">
+                        <img class="list_icon" src="images/iconlist.png" alt="iconlist">
+                        <p class="small_title">Voor al uw reflecterende oplossingen</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--------------- List Section Start------------------------->
+
+
+
+    <!---------------- Product Section Style Start --------------------->
+    <Style>
+        /* product description Style Start */
+        .product_des{
+            padding-right: 100px;
+        }
+        .product_des_title {
+            color: #000;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            padding-bottom: 20px;
+            border-bottom-style: solid;
+            border-color: #D7D7D7;
+            border-bottom-width: 2px;
+        }
+
+        .product_des_text {
+            color: #000;
+            font-family: Poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: 20px;
+        }
+
+        /* product description Style End */
+
+
+        /* Contact Section Style Start */
+        .contact_section {
+            border-radius: 10px;
+            background: #1A1A18;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .contact_text {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .contact_title {
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: -0.44px;
+            margin-bottom: 30px;
+        }
+
+        .contact_btn {
+            color: #000;
+            font-family: Poppins;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            border-radius: 5px;
+            background: #FFF;
+            padding: 5px 20px;
+            border: 2px solid #FFFFFF;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .contact_btn:hover {
+            background-color: transparent;
+            border-color: #FFFFFF;
+            color: #ffffff;
+        }
+
+        .contact_images {
+            flex-basis: 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .contact_img {
+            max-width: 100%;
+            position: absolute;
+            bottom: -30px;
+        }
+
+
+        /* Contact Section Style End */
+    </Style>
+
+
+    <!---------------- Product Section Start --------------------->
+    <section style="padding: 80px 0px; background-color: #F6F6F6;">
+        <div class="container">
+            <div class="row">
+                <div class="col_6">
+                    <!-- product description -->
+                    <div class="product_des">
+                        <h3 class="product_des_title">Omschrijving</h3>
+                        <p class="product_des_text">Avery Dennison V-6701-B Geel Contourmarkering per meter. U kunt zelf
+                            de hoeveelheid meters bepalen. De contourmarkering is te gebruiken als markering op de
+                            achterkant van uw vrachtwagen, zo bent u beter te zien in het verkeer en voldoet uw
+                            vrachtwagen aan de juiste markeringen.</p>
+                    </div> <!-- product description -->
+                </div>
+                <div class="col_6">
+                    <!-- Contact Section-->
+                    <div class="contact_section">
+                        <div class="contact_text">
+                            <h3 class="contact_title">Heb je een vraag of advies nodig?</h3>
+
+                            <a style="margin-bottom: 20px;" class="contact_btn" href="#">+31 4 34301150</a>
+                            <a class="contact_btn" href="#">info@reflexfolie.nl</a>
+
+                        </div>
+                        <div class="contact_images">
+                            <img class="contact_img" src="images/man.png" alt="">
+                        </div>
+
+                    </div> <!-- Contact Section-->
+                </div>
+            </div><!-- Row-->
+        </div><!-- Container-->
+    </section>
+    <!---------------- Product Section End --------------------->
+
+    <!---------------- Product Section Tab Start --------------------->
+
+    <style>
+        /* Product Tab Section Start Style */
+        .product_tab_sec{
+            padding-right: 100px;
+        }
+        .product_tab {
+            display: flex;
+            align-items: center;
+            padding: 0px 15px;
+        }
+
+        .bg_c {
+            background: #F6F6F6;
+        }
+
+        .tab_left,
+        .tab_right {
+            flex-basis: 50%;
+        }
+
+        .tab_text {
+            color: #000;
+            font-family: Poppins;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 290%;
+        }
+
+        /* Product Tab Section End Style */
+
+
+
+        /* Product Plus List Section Start Style */
+        .plus_list {
+            margin: 10px 0px 20px;
+        }
+
+        .plus_single_list {
+            display: flex;
+            align-items: center;
+        }
+
+        .plus_list_icon {
+            width: 24px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .plus_list_text {
+            color: #000;
+            font-family: Poppins;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 197%;
+            /* 33.49px */
+        }
+
+        /* Product Plus List Section End Style  */
+
+        /* File Section */
+        .file_icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .file_btn{
+            text-decoration: none;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            padding: 0px 20px;
+        }
+        .file_btn_text {
+            color: #000;
+            font-family: Poppins;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 290%;
+            /* 49.3px */
+        }
+    </style>
+
+    <section style="background-color: #ffffff; padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col_6">
+                    <div class="product_tab_sec">
+                        <h3 class="product_des_title">Technische specificaties</h3>
+                        <!-- Loop Tab -->
+                        <div class="product_tab bg_c">
+                            <div class="tab_left">
+                                <p class="tab_text">Omschrijving hier</p>
+                            </div>
+                            <div class="tab_right">
+                                <p class="tab_text">EC104</p>
+                            </div>
+                        </div><!-- Loop Tab -->
+
+                        <!-- Loop Tab -->
+                        <div class="product_tab">
+                            <div class="tab_left">
+                                <p class="tab_text">Omschrijving hier</p>
+                            </div>
+                            <div class="tab_right">
+                                <p class="tab_text">EC104</p>
+                            </div>
+                        </div><!-- Loop Tab -->
+
+                        <!-- Loop Tab -->
+                        <div class="product_tab bg_c">
+                            <div class="tab_left">
+                                <p class="tab_text">Omschrijving hier</p>
+                            </div>
+                            <div class="tab_right">
+                                <p class="tab_text">ECE-48</p>
+                            </div>
+                        </div><!-- Loop Tab -->
+
+                        <!-- Loop Tab -->
+                        <div class="product_tab">
+                            <div class="tab_left">
+                                <p class="tab_text">Omschrijving hier</p>
+                            </div>
+                            <div class="tab_right">
+                                <p class="tab_text">Richtlijn 2007/35/CE</p>
+                            </div>
+                        </div><!-- Loop Tab -->
+
+                        <!-- Loop Tab -->
+                        <div class="product_tab bg_c">
+                            <div class="tab_left">
+                                <p class="tab_text">Omschrijving hier</p>
+                            </div>
+                            <div class="tab_right">
+                                <p class="tab_text">ECE-104 WETGEVING</p>
+                            </div>
+                        </div><!-- Loop Tab -->
+
+                    </div>
+                </div>
+                <div class="col_6">
+                    <div class="plus_list_section">
+                        <h3 class="product_des_title">Technische specificaties</h3>
+                        <div class="plus_list">
+                            <div class="plus_single_list">
+                                <img class="plus_list_icon" src="images/plus-circle.svg" alt="plus-circle">
+                                <p class="plus_list_text">Betere zichtbaarheid van het voertuig</p>
+                            </div>
+                            <div class="plus_single_list">
+                                <img class="plus_list_icon" src="images/plus-circle.svg" alt="plus-circle">
+                                <p class="plus_list_text">Betere inschatting van afstand en snelheid</p>
+                            </div>
+                            <div class="plus_single_list">
+                                <img class="plus_list_icon" src="images/plus-circle.svg" alt="plus-circle">
+                                <p class="plus_list_text">Optische opwaardering van het voertuig</p>
+                            </div>
+                            <div class="plus_single_list">
+                                <img class="plus_list_icon" src="images/Icon.svg" alt="Icon">
+                                <p class="plus_list_text">Lorem ipsum dolar sit amet</p>
+                            </div>
+                        </div>
+                    </div><!-- plus_list_section-->
+
+                    <!-- file Section -->
+                    <div class="file_section">
+                        <h3 class="product_des_title">Handleiding</h3>
+                        <div class="file_button bg_c">
+                            <a class="file_btn" href=""><img class="file_icon" src="images/file-05.svg" alt="file-05">
+                                <p class="file_btn_text">Aanbrengen contourmarkering</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- Row-->
+        </div><!-- Container-->
+
+    </section>
+    <!---------------- Product Section Tab Start --------------------->
+
+
+
+    <!--------------- Product carousel Section Start------------------------->
+
+    <style>
+        .carousel_img_box {
+            height: 346px;
+            width: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        .product_img {
+            transition-duration: 0.7s !important;
+        }
+
+        .product_carousel:hover .product_img {
+            transform: scale(1.05);
+        }
+
+        .product_carousel_title {
+            padding: 20px 10px 10px;
+        }
+
+        .product_slider {
+            padding-top: 50px;
+            position: relative;
+            height: 100%;
+        }
+    </style>
+    <section style="padding: 80px 0px 150px; background-color:#F6F6F6;">
+
+        <div style="overflow: hidden;">
+            <div class="container">
+                <div class="carousel_title flex_space_between">
+                    <h2 class="title">Veel verkochten producten</h2>
+                    <a href="#" class="btn black_btn">BEKIJK ONS ASSORTIMENT</a>
+                </div>
+
+                <div class="product_slider">
+                    <div class="swiper productSlider" style="overflow: visible !important;">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product4.png" alt="">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product2.png" alt="product2">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product.png" alt="product">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product2.png" alt="product2">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product3.png" alt="product3">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product4.png" alt="product4">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- Container -->
+        </div><!-- overflow hidden -->
+    </section>
+    <!--------------- Product carousel Section end------------------------->
+
+
+    <!--------------- Banner Section Section start------------------------->
+    <style>
+        .bg_img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner_text {
+            padding-right: 100px;
+        }
+
+        .banner_right {
+            position: relative;
+            height: 100%;
+        }
+
+        .banner_image {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+    <section>
+
+        <div style="position: relative; padding: 80px 0px;">
+
+            <img class="bg_img" src="/images/bgred.png" alt="">
+            <div class="container">
+                <div class="row ">
+                    <div class="col_6">
+                        <div class="banner_text">
+                            <h2 class="title" style="margin-bottom: 30px;">HEb je een vraag of advies nodig?</h2>
+                            <p class="text_p white">Voel je vrij om contact met ons op te nemen! Bij Reflexfolie staan
+                                we klaar om al je vragen te beantwoorden en advies te bieden!</p>
+
+                            <div class="banner_button flex" style="margin-top: 30px;">
+                                <a href="#" class="btn black_btn_fill" style="margin-right: 10px;">+31 4 34301150</a>
+                                <a href="#" class="btn black_btn">info@reflexfolie.nl</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_6">
+                        <div class="banner_right">
+                            <img src="images/man.png" class="banner_image" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- position relative -->
+    </section>
+
+
+    <!--------------- Banner Section Section end------------------------->
+
+
+
+
+
+    <section style="padding: 80px 0px; text-align: center;">
+        <img src="/images/reflexfolie Dimmy 2.png" alt="">
+    </section>
+
+
+
+
+
+    <!-- ==========================================***=============================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+    <script>
+        var swiper = new Swiper(".productSlider", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

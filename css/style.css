@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Global CSS Style Code */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pramiry-font: "Inter";
+    --secondary-font: "Manrope";
+    --accent-font: "Poppins";
+    --pramiry-color: #F15A06;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: calc(var(--bs-gutter-y) * 1);
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.col_1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+
+.col_2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.col_3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.col_4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col_5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.col_6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col_7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.col_8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.col_9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.col_10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.col_11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+
+.col_12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify_content_flex_end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align_items_flex_end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+
+.flex_space_between {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.align_center {
+    align-items: center;
+}
+
+/* Global title CSS Style Code */
+
+
+.title_2 {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.8px;
+}
+
+.title_4 {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+/* Global Button CSS Style Code */
+
+
+.btn {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--pramiry-color);
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--pramiry-color);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--pramiry-color) !important;
+}
+
+
+
+.white {
+    color: var(--white-color) !important;
+}
+
+.title {
+    color: var(--black-color);
+    font-family: var(--pramiry-font);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 50px */
+    text-transform: uppercase;
+}
+
+.small_title {
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+
+.text_p {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+}
+
+
+
+.btn {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 164.706% */
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--pramiry-color);
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--pramiry-color);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--pramiry-color) !important;
+}
+
+.black_btn {
+    color: var(--black-color) !important;
+    border-color: var(--black-color) !important;
+    background: transparent;
+}
+
+.black_btn_fill {
+    color: var(--white-color) !important;
+    background-color: var(--black-color) !important;
+    border-color: var(--black-color) !important;
+}
+
+.black_btn_fill:hover {
+    color: var(--black-color) !important;
+    border-color: var(--black-color) !important;
+    background: transparent !important;
+}
+
+.black_btn:hover {
+    color: var(--white-color) !important;
+    background-color: var(--black-color) !important;
+}
+
+
+.product_title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+.product_grid_text {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 164.706% */
+}
